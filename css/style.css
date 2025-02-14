@@ -1,0 +1,88 @@
+header { /*This says "Leonie's Little Blog*/ 
+    display: flex;
+    flex-direction: row;
+    background-color: #e8d2f0;
+    font-size: 50px;
+    font-weight: bold; 
+    color: #e680d8;   
+    justify-content: space-evenly;
+    padding: 10px;
+    border-bottom: 10px solid #e33f79; /* Add a bottom border */
+}
+
+.cat-computer-image {
+    height: 200px;
+    width: auto;
+}
+
+nav {
+    background-color: #d9c0e5;
+    color: #5a1515; /* Optional: Changes the text color to dark gray */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    font-style: bold;
+    text-decoration: underline;
+    font-size: 20px; /* Optional: Adjusts the font size */
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+body {
+    gap: 5px; /* Space between elements */
+    background-color: #ebd7df;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.cat-article {
+    display: flex; 
+    flex-direction: column;
+    align-items: left;  /* Aligns items vertically */
+    background-color: rgb(235, 198, 232);
+    text-align: center;
+    width: 25%;
+    padding: 20px;
+    border: 3px dashed #ff69b4; /* A cute pink dashed border */
+    border-radius: 20px; /* Rounds the corners */
+    padding: 5px 35px 35px 35px;
+    margin: 15px;
+}
+
+h3 {
+    font-size: 32px;
+    color: #000000;
+}
+
+ p {
+    font-size: 20px; 
+    line-height: 1.6; 
+    text-align: justify; /* Justify the paragraph */
+}
+
+.small-cat-pic-image { /* These are all my cat p ics in this class! */
+    width: 250px;
+    height: auto;
+}
+
+.cat-pic-div {
+    display: flex; 
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+footer {
+    font-size: 20px; 
+    font-style: italic;
+    background-color: #cdbad1; 
+    padding: 30px;
+    text-align: center;
+}
