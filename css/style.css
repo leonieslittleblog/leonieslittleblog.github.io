@@ -31,33 +31,33 @@ nav {
 }
 
 body {
-    gap: 5px; /* Space between elements */
+
     background-color: #ebd7df;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.article-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.grid-container {
+    display: grid; /* Turns the container into a grid */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 10px; /* Adds space between grid items */
 }
 
-.cat-article {
-    display: flex; 
-    flex-direction: column;
-    align-items: left;  /* Aligns items vertically */
-    background-color: rgb(235, 198, 232);
-    text-align: center;
-    width: 25%;
-    padding: 20px;
-    border: 3px dashed #ff69b4; /* A cute pink dashed border */
-    border-radius: 20px; /* Rounds the corners */
-    padding: 5px 35px 35px 35px;
-    margin: 15px;
+.grid-item {
+    background-color: #f0f0f0; /* Light background color */
+    border: 1px solid #ccc; /* Border around each item */
+    padding: 30px; /* Space inside the grid items */
+    text-align: center; /* Centers the text inside the grid items */
+    font-size: 20px; /* Adjust the font size */
+    border: 3px dashed pink; /* Pink dashed border */
+    border-radius: 15px; /* Curved edges */
 }
 
-h3 {
+.catheader {
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+h4 {
     font-size: 32px;
     color: #000000;
 }
@@ -79,10 +79,84 @@ h3 {
     flex-direction: row;
 }
 
+.second-grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 column */
+    grid-template-rows: auto auto; /* First row is 30%, second row is 70% */
+    gap: 20px; /* Space between rows */
+    place-content: center;
+    background-color: #ebefcd;
+}
+
+.fruitsheader {
+    font-size: 80px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: #e58e23;
+    text-align: center;
+}
+
+.secondp {
+    margin: 5px 15px 0px 15px;
+}
+
+.second-grid-item img {
+    width: 250px; /* Make images fill the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: round corners for images */
+    margin: 0px 5px 5px 5px; /* Optional: space between images */
+    place-items: center;
+}
+
+.green-container {
+    display: grid;
+    background-color: #d0e9cf;
+}
+
+.holidayheader {
+    font-size: 80px;
+    margin-bottom: 0px;
+}
+
+.holiday-subheader {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.third-grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Create two columns, the second is for the images */
+    grid-template-rows: auto; /* Let the row size adjust automatically */
+    gap: 20px; /* Optional: space between elements */
+}
+
+.holiday-text-container {
+    grid-column: 1;
+}
+
+.holiday-images {
+    grid-column: 2; /* The images occupy the second column */
+    grid-row: 1;
+}
+
+.holiday-images img {
+    width: auto; /* Make images fill the container's width */
+    height: 350px; /* Maintain aspect ratio */
+    margin: 15px;
+}
+
+.holiday-p {
+    margin: 0px 15px 0px 15px;
+    line-height: 1.7;
+}
+
+
 footer {
     font-size: 20px; 
     font-style: italic;
     background-color: #cdbad1; 
     padding: 30px;
+    margin-top: 20px;
     text-align: center;
 }
